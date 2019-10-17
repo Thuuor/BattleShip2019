@@ -33,7 +33,7 @@ public class BattleShip {
 	    addShipsToMatrix();
 	    	     
 	    while(!gameOver) {
-	    	printMatrix(true);
+	    	printMatrix(false);
 	    	askCoordinates(input);
 	    	shoot(letter, number);
 	    	checkGameOver();
