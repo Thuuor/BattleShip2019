@@ -27,7 +27,7 @@ public class BattleShip {
 	    while(!gameOver) {
 	    	printMatrix(true);
 	    	System.out.println("Enter row (Letter):");
-	    	letter = input.next().charAt(0);
+	    	letter = input.next().toUpperCase().charAt(0);
 	    	System.out.println("Enter column (Number): ");
 	    	number = input.nextInt();
 	    	shoot(letter, number);
