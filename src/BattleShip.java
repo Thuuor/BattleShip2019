@@ -54,6 +54,8 @@ public class BattleShip {
 		int row = letter - 'A';
 		int col = number - 1;
 		
+		remainingShots--;
+		
 		if (matrix[row][col] == SHIP_SYMBOL) {
 			matrix[row][col] = SUNK_SHIP_SYMBOL;
 			sunkShipCounter++;
